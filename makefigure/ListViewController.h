@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListViewController : UIViewController
+@interface ListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btn_Heart;
 @property (weak, nonatomic) IBOutlet UIView *layout;
+
+
+
+//@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
 
 @end

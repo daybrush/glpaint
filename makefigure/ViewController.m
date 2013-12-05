@@ -23,7 +23,7 @@
     //self.labelTitle.font = font;
 
     
-    
+/*
     NSArray *familyNames = [UIFont familyNames];
     for( NSString *familyName in familyNames ){
         printf( "Family: %s \n", [familyName UTF8String] );
@@ -32,7 +32,7 @@
             printf( "\tFont: %s \n", [fontName UTF8String] );
         }
     }
-    
+ */
     
 }
 
@@ -45,6 +45,32 @@
 - (IBAction)returned:(UIStoryboardSegue *)segue {
     //self.textLabel.text =@"난 돌아왔음";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
@@ -66,5 +92,6 @@
     // case it launches in the current orientation
     return UIDeviceOrientationPortrait;
 }
+
 
 @end

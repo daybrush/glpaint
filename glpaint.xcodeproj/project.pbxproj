@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		862356C3184F9A66002A8898 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 862356C2184F9A66002A8898 /* title.png */; };
+		862356C6184F9F12002A8898 /* DAYAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 862356C5184F9F12002A8898 /* DAYAlert.m */; };
+		862356CB184FA17E002A8898 /* ListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 862356CA184FA17E002A8898 /* ListViewCell.m */; };
 		86619CB21847B52A003ECBBA /* black_button_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 86619CB11847B52A003ECBBA /* black_button_menu.png */; };
 		86619CB41847B8BB003ECBBA /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 86619CB31847B8BB003ECBBA /* heart.png */; };
 		86619CB71847BA7B003ECBBA /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86619CB61847BA7B003ECBBA /* ListViewController.m */; };
@@ -49,6 +52,7 @@
 		8691A0471847228D0020B647 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8691A0461847228D0020B647 /* LoginController.m */; };
 		8691A049184724BC0020B647 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 8691A048184724BC0020B647 /* password.png */; };
 		8691A04B184724C10020B647 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 8691A04A184724C10020B647 /* user.png */; };
+		86F06520184ECE86008D06B5 /* DAYDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F0651F184ECE86008D06B5 /* DAYDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		862356C2184F9A66002A8898 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		862356C4184F9F12002A8898 /* DAYAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAYAlert.h; sourceTree = "<group>"; };
+		862356C5184F9F12002A8898 /* DAYAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAYAlert.m; sourceTree = "<group>"; };
+		862356C9184FA17E002A8898 /* ListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewCell.h; sourceTree = "<group>"; };
+		862356CA184FA17E002A8898 /* ListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewCell.m; sourceTree = "<group>"; };
 		86619CAA18479AA7003ECBBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
 		86619CB11847B52A003ECBBA /* black_button_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_button_menu.png; sourceTree = "<group>"; };
 		86619CB31847B8BB003ECBBA /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
@@ -113,6 +122,8 @@
 		8691A0461847228D0020B647 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		8691A048184724BC0020B647 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
 		8691A04A184724C10020B647 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		86F0651E184ECE86008D06B5 /* DAYDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAYDataModel.h; sourceTree = "<group>"; };
+		86F0651F184ECE86008D06B5 /* DAYDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAYDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +150,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		862356C7184FA0B2002A8898 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8676DA171845D46900B89377 /* ViewController.h */,
+				8676DA181845D46900B89377 /* ViewController.m */,
+				8691A0451847228D0020B647 /* LoginController.h */,
+				8691A0461847228D0020B647 /* LoginController.m */,
+				86619CB51847BA7B003ECBBA /* ListViewController.h */,
+				86619CB61847BA7B003ECBBA /* ListViewController.m */,
+				86619CD2184852C0003ECBBA /* WriteViewController.h */,
+				86619CD3184852C0003ECBBA /* WriteViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		862356C8184FA0C4002A8898 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				862356C4184F9F12002A8898 /* DAYAlert.h */,
+				862356C5184F9F12002A8898 /* DAYAlert.m */,
+				86F0651E184ECE86008D06B5 /* DAYDataModel.h */,
+				86F0651F184ECE86008D06B5 /* DAYDataModel.m */,
+				862356C9184FA17E002A8898 /* ListViewCell.h */,
+				862356CA184FA17E002A8898 /* ListViewCell.m */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
 		86619CC018484792003ECBBA /* sphere */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,22 +225,16 @@
 		8676DA051845D46900B89377 /* glpaint */ = {
 			isa = PBXGroup;
 			children = (
+				862356C7184FA0B2002A8898 /* Controller */,
+				862356C8184FA0C4002A8898 /* class */,
 				868DA9FF184640FD0015288D /* font */,
 				868DA9FE184640EF0015288D /* images */,
 				8676DA0E1845D46900B89377 /* AppDelegate.h */,
 				8676DA0F1845D46900B89377 /* AppDelegate.m */,
 				8676DA111845D46900B89377 /* Main_iPhone.storyboard */,
 				8676DA141845D46900B89377 /* Main_iPad.storyboard */,
-				8676DA171845D46900B89377 /* ViewController.h */,
-				8676DA181845D46900B89377 /* ViewController.m */,
 				8676DA1A1845D46900B89377 /* Images.xcassets */,
 				8676DA061845D46900B89377 /* Supporting Files */,
-				8691A0451847228D0020B647 /* LoginController.h */,
-				8691A0461847228D0020B647 /* LoginController.m */,
-				86619CB51847BA7B003ECBBA /* ListViewController.h */,
-				86619CB61847BA7B003ECBBA /* ListViewController.m */,
-				86619CD2184852C0003ECBBA /* WriteViewController.h */,
-				86619CD3184852C0003ECBBA /* WriteViewController.m */,
 			);
 			name = glpaint;
 			path = makefigure;
@@ -240,6 +273,7 @@
 		868DA9FE184640EF0015288D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				862356C2184F9A66002A8898 /* title.png */,
 				86619CC018484792003ECBBA /* sphere */,
 				868DAA0A18470E690015288D /* 1385638612_3d_objects.png */,
 				868DAA06184706950015288D /* Bubble-Background-PSD---cssauthor.com.png */,
@@ -356,6 +390,7 @@
 				8691A049184724BC0020B647 /* password.png in Resources */,
 				8676DA161845D46900B89377 /* Main_iPad.storyboard in Resources */,
 				8676DA381845D79700B89377 /* Blurred Background (6).jpg in Resources */,
+				862356C3184F9A66002A8898 /* title.png in Resources */,
 				868DAA05184704480015288D /* maagkramp.ttf in Resources */,
 				8676DA3A1845D86200B89377 /* Blurred Background (4).jpg in Resources */,
 				86619CC618484799003ECBBA /* sphere.png in Resources */,
@@ -392,7 +427,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				86619CB71847BA7B003ECBBA /* ListViewController.m in Sources */,
+				86F06520184ECE86008D06B5 /* DAYDataModel.m in Sources */,
 				8676DA191845D46900B89377 /* ViewController.m in Sources */,
+				862356C6184F9F12002A8898 /* DAYAlert.m in Sources */,
+				862356CB184FA17E002A8898 /* ListViewCell.m in Sources */,
 				8691A0471847228D0020B647 /* LoginController.m in Sources */,
 				8676DA101845D46900B89377 /* AppDelegate.m in Sources */,
 				86619CD4184852C0003ECBBA /* WriteViewController.m in Sources */,
