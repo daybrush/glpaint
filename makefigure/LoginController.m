@@ -60,6 +60,7 @@
     [self.view addGestureRecognizer:tap];
     
 }
+
 -(void)didTap: (UITapGestureRecognizer *)rec
 {
     [self.InputID resignFirstResponder];
@@ -71,11 +72,16 @@
 -(void)KeyboardNotification : (NSNotification *)notification {
     NSDictionary* info = [notification userInfo];
     CGRect endInfoKey = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
-
     
-    _scrollView.frame = CGRectMake(0, 94, self.view.frame.size.width,  endInfoKey.origin.y - 86);
+//    [UIView animateWithDuration:1 animations:^{
+    _scrollView.frame = CGRectMake(0, 86, self.view.frame.size.width,  endInfoKey.origin.y - 86);
     //endInfoKey
-    
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"prePareSegue");
 }
 
 - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
@@ -99,24 +105,27 @@
     NSString* password = _InputPWD.text;
     NSString* password_check = _InputPWD_CHK.text;
     NSString* name = _InputNAME.text;
-    
     if(ISEMPTY(userid)) {
         NSLog(@"아이디를 입력해주세요.");
+        [DAYAlert showMessage:self withMessage:@"아이디를 입력해주세요"];
         return;
     }
     if(ISEMPTY(password)) {
         NSLog(@"비밀번호를 입력해주세요.");
+        [DAYAlert showMessage:self withMessage:@"비번을 입력해주세요"];
         return;
     }
     if(!compare(password, password_check)) {
         NSLog(@"비번이 같지 않습니다.");
+        [DAYAlert showMessage:self withMessage:@"비번이 같지 않습니다."];
         return;
     }
     
-    [_myModel saveID: userid withPassword:password];
-    
-    NSLog(@"성공");
-    [self.navigationController popViewControllerAnimated:YES];
+    BOOL check = [_myModel saveID: userid withPassword:password withName:name];
+    if(check) {
+        [self.navigationController popViewControllerAnimated:YES];
+        [DAYAlert showMessage:self.parentViewController withMessage:@"축하합니다."];
+    }
 }
 
 
@@ -148,7 +157,9 @@
                 NSLog(@"비밀번호를 입력해주세요.");
                 return NO;
             }
-            [self shouldPerformSegueWithIdentifier:@"GoHome" sender:self];
+            if([self shouldPerformSegueWithIdentifier:@"GoHome" sender:self])
+                [self performSegueWithIdentifier:@"GoHome" sender:self];
+            
             return NO;
     }
     
@@ -161,7 +172,8 @@
     UITextField * textfield = (UITextField *)sender;
     
     CGFloat y = textfield.frame.origin.y;
-    _scrollView.contentOffset = CGPointMake(0, y - 10);
+    //_scrollView.contentOffset = CGPointMake(0, y - 10);
+    
 }
 
 - (IBAction)goBack:(id)sender {

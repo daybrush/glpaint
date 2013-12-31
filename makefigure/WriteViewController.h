@@ -8,17 +8,29 @@
 
 #import <UIKit/UIKit.h>
 
+#import "CLImageEditor.h"
 
 
-@interface WriteViewController : UIViewController
+@interface WriteViewController : UIViewController <UIImagePickerControllerDelegate, CLImageEditorDelegate>
 
 - (IBAction)showObjectMenu:(id)sender;
 - (void) toggleMenu;
+
+- (IBAction)savePost:(id)sender;
+
+
+- (IBAction)cancelWrite:(id)sender;
 
 @property bool show_object_menu;
 
 @property (weak, nonatomic) IBOutlet UIImageView *view_menu_up;
 
 @property (weak, nonatomic) IBOutlet UIView *view_menu;
+@property (weak, nonatomic) IBOutlet UIImageView *imageAtt;
+- (IBAction)editImage:(id)sender;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UITextField *textTitle;
+@property (weak, nonatomic) IBOutlet UITextView *textContents;
+
 
 @end

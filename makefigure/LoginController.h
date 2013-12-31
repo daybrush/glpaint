@@ -7,13 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
-#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
-
-#define EMPTY @""
-#define compare(a, b) [a isEqualToString:b]
-#define ISEMPTY(a) [a isEqualToString:@""]
+#import "DAYMacro.h"
 
 
 @interface LoginController : UIViewController <UITextFieldDelegate>
@@ -35,7 +29,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *ButtonLogin;
 
 
-- (IBAction)LoginClick:(id)sender;
 - (IBAction)SignUpClick:(id)sender;
 - (IBAction)goBack:(id)sender;
 

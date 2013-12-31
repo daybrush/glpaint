@@ -11,7 +11,7 @@
 @implementation DAYAlert
 
 + (void) showMessage:(id)delegate withMessage:(NSString*)message {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"glPaint"
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Cloud"
                                                         message:message
                                                        delegate:delegate
                                               cancelButtonTitle:@"확인"

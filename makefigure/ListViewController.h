@@ -8,11 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UIButton *btn_Heart;
-@property (weak, nonatomic) IBOutlet UIView *layout;
+@interface ListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate>
+
+- (void) saveBoardArray:(NSArray *)array;
 
 
+- (IBAction)newPost:(id)sender;
+- (void)setGoPostNum:(int)postNum;
+- (void)setReadyGo;
+@property (weak, nonatomic) IBOutlet UIView *viewTitle;
+
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (weak, nonatomic) IBOutlet UIView *viewTitleBar;
+@property (weak, nonatomic) IBOutlet UIView *viewBackground;
 
 //@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
