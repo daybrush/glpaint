@@ -151,14 +151,14 @@
 		86619CCD184851A2003ECBBA /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		86619CD2184852C0003ECBBA /* WriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteViewController.h; sourceTree = "<group>"; };
 		86619CD3184852C0003ECBBA /* WriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteViewController.m; sourceTree = "<group>"; };
-		8676D9FC1845D46900B89377 /* glpaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glpaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8676D9FC1845D46900B89377 /* cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676D9FF1845D46900B89377 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8676DA011845D46900B89377 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8676DA031845D46900B89377 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		8676DA071845D46900B89377 /* glpaint-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "glpaint-Info.plist"; sourceTree = "<group>"; };
+		8676DA071845D46900B89377 /* cloud-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cloud-Info.plist"; sourceTree = "<group>"; };
 		8676DA091845D46900B89377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8676DA0B1845D46900B89377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8676DA0D1845D46900B89377 /* glpaint-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "glpaint-Prefix.pch"; sourceTree = "<group>"; };
+		8676DA0D1845D46900B89377 /* cloud-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cloud-Prefix.pch"; sourceTree = "<group>"; };
 		8676DA0E1845D46900B89377 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8676DA0F1845D46900B89377 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8676DA121845D46900B89377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		8676DA171845D46900B89377 /* ViewController.h */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8676DA181845D46900B89377 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8676DA1A1845D46900B89377 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8676DA201845D46900B89377 /* glpaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glpaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8676DA201845D46900B89377 /* cloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676DA211845D46900B89377 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8676DA291845D46900B89377 /* glpaintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "glpaintTests-Info.plist"; sourceTree = "<group>"; };
 		8676DA2B1845D46900B89377 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -378,8 +378,8 @@
 		8676D9F31845D46900B89377 = {
 			isa = PBXGroup;
 			children = (
-				8676DA051845D46900B89377 /* glpaint */,
-				8676DA271845D46900B89377 /* glpaintTests */,
+				8676DA051845D46900B89377 /* cloud */,
+				8676DA271845D46900B89377 /* cloudTests */,
 				8676D9FE1845D46900B89377 /* Frameworks */,
 				8676D9FD1845D46900B89377 /* Products */,
 			);
@@ -388,8 +388,8 @@
 		8676D9FD1845D46900B89377 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8676D9FC1845D46900B89377 /* glpaint.app */,
-				8676DA201845D46900B89377 /* glpaintTests.xctest */,
+				8676D9FC1845D46900B89377 /* cloud.app */,
+				8676DA201845D46900B89377 /* cloudTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -405,7 +405,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8676DA051845D46900B89377 /* glpaint */ = {
+		8676DA051845D46900B89377 /* cloud */ = {
 			isa = PBXGroup;
 			children = (
 				86A411321872C176000A09C2 /* CLImageEditor */,
@@ -422,28 +422,28 @@
 				8676DA1A1845D46900B89377 /* Images.xcassets */,
 				8676DA061845D46900B89377 /* Supporting Files */,
 			);
-			name = glpaint;
+			name = cloud;
 			path = makefigure;
 			sourceTree = "<group>";
 		};
 		8676DA061845D46900B89377 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8676DA071845D46900B89377 /* glpaint-Info.plist */,
+				8676DA071845D46900B89377 /* cloud-Info.plist */,
 				8676DA081845D46900B89377 /* InfoPlist.strings */,
 				8676DA0B1845D46900B89377 /* main.m */,
-				8676DA0D1845D46900B89377 /* glpaint-Prefix.pch */,
+				8676DA0D1845D46900B89377 /* cloud-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8676DA271845D46900B89377 /* glpaintTests */ = {
+		8676DA271845D46900B89377 /* cloudTests */ = {
 			isa = PBXGroup;
 			children = (
 				8676DA2D1845D46900B89377 /* makefigureTests.m */,
 				8676DA281845D46900B89377 /* Supporting Files */,
 			);
-			name = glpaintTests;
+			name = cloudTests;
 			path = makefigureTests;
 			sourceTree = "<group>";
 		};
@@ -718,9 +718,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8676D9FB1845D46900B89377 /* glpaint */ = {
+		8676D9FB1845D46900B89377 /* cloud */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8676DA311845D46900B89377 /* Build configuration list for PBXNativeTarget "glpaint" */;
+			buildConfigurationList = 8676DA311845D46900B89377 /* Build configuration list for PBXNativeTarget "cloud" */;
 			buildPhases = (
 				8676D9F81845D46900B89377 /* Sources */,
 				8676D9F91845D46900B89377 /* Frameworks */,
@@ -730,14 +730,14 @@
 			);
 			dependencies = (
 			);
-			name = glpaint;
+			name = cloud;
 			productName = makefigure;
-			productReference = 8676D9FC1845D46900B89377 /* glpaint.app */;
+			productReference = 8676D9FC1845D46900B89377 /* cloud.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8676DA1F1845D46900B89377 /* glpaintTests */ = {
+		8676DA1F1845D46900B89377 /* cloudTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8676DA341845D46900B89377 /* Build configuration list for PBXNativeTarget "glpaintTests" */;
+			buildConfigurationList = 8676DA341845D46900B89377 /* Build configuration list for PBXNativeTarget "cloudTests" */;
 			buildPhases = (
 				8676DA1C1845D46900B89377 /* Sources */,
 				8676DA1D1845D46900B89377 /* Frameworks */,
@@ -748,9 +748,9 @@
 			dependencies = (
 				8676DA261845D46900B89377 /* PBXTargetDependency */,
 			);
-			name = glpaintTests;
+			name = cloudTests;
 			productName = makefigureTests;
-			productReference = 8676DA201845D46900B89377 /* glpaintTests.xctest */;
+			productReference = 8676DA201845D46900B89377 /* cloudTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -767,7 +767,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8676D9F71845D46900B89377 /* Build configuration list for PBXProject "glpaint" */;
+			buildConfigurationList = 8676D9F71845D46900B89377 /* Build configuration list for PBXProject "cloud" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -780,8 +780,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8676D9FB1845D46900B89377 /* glpaint */,
-				8676DA1F1845D46900B89377 /* glpaintTests */,
+				8676D9FB1845D46900B89377 /* cloud */,
+				8676DA1F1845D46900B89377 /* cloudTests */,
 			);
 		};
 /* End PBXProject section */
@@ -921,7 +921,7 @@
 /* Begin PBXTargetDependency section */
 		8676DA261845D46900B89377 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8676D9FB1845D46900B89377 /* glpaint */;
+			target = 8676D9FB1845D46900B89377 /* cloud */;
 			targetProxy = 8676DA251845D46900B89377 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1043,9 +1043,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "makefigure/glpaint-Prefix.pch";
-				INFOPLIST_FILE = "makefigure/glpaint-Info.plist";
-				PRODUCT_NAME = glpaint;
+				GCC_PREFIX_HEADER = "makefigure/cloud-Prefix.pch";
+				INFOPLIST_FILE = "makefigure/cloud-Info.plist";
+				PRODUCT_NAME = cloud;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1056,9 +1056,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "makefigure/glpaint-Prefix.pch";
-				INFOPLIST_FILE = "makefigure/glpaint-Info.plist";
-				PRODUCT_NAME = glpaint;
+				GCC_PREFIX_HEADER = "makefigure/cloud-Prefix.pch";
+				INFOPLIST_FILE = "makefigure/cloud-Info.plist";
+				PRODUCT_NAME = cloud;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1080,7 +1080,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "makefigureTests/glpaintTests-Info.plist";
-				PRODUCT_NAME = glpaintTests;
+				PRODUCT_NAME = cloudTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1099,7 +1099,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "makefigure/makefigure-Prefix.pch";
 				INFOPLIST_FILE = "makefigureTests/glpaintTests-Info.plist";
-				PRODUCT_NAME = glpaintTests;
+				PRODUCT_NAME = cloudTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1108,7 +1108,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8676D9F71845D46900B89377 /* Build configuration list for PBXProject "glpaint" */ = {
+		8676D9F71845D46900B89377 /* Build configuration list for PBXProject "cloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8676DA2F1845D46900B89377 /* Debug */,
@@ -1117,7 +1117,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8676DA311845D46900B89377 /* Build configuration list for PBXNativeTarget "glpaint" */ = {
+		8676DA311845D46900B89377 /* Build configuration list for PBXNativeTarget "cloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8676DA321845D46900B89377 /* Debug */,
@@ -1126,7 +1126,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8676DA341845D46900B89377 /* Build configuration list for PBXNativeTarget "glpaintTests" */ = {
+		8676DA341845D46900B89377 /* Build configuration list for PBXNativeTarget "cloudTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8676DA351845D46900B89377 /* Debug */,

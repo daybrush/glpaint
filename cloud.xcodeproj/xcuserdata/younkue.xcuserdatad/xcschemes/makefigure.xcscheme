@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8676D9FB1845D46900B89377"
                BuildableName = "glpaint.app"
-               BlueprintName = "glpaint"
-               ReferencedContainer = "container:glpaint.xcodeproj">
+               BlueprintName = "cloud"
+               ReferencedContainer = "container:cloud.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8676DA1F1845D46900B89377"
                BuildableName = "glpaintTests.xctest"
-               BlueprintName = "glpaintTests"
-               ReferencedContainer = "container:glpaint.xcodeproj">
+               BlueprintName = "cloudTests"
+               ReferencedContainer = "container:cloud.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8676D9FB1845D46900B89377"
             BuildableName = "glpaint.app"
-            BlueprintName = "glpaint"
-            ReferencedContainer = "container:glpaint.xcodeproj">
+            BlueprintName = "cloud"
+            ReferencedContainer = "container:cloud.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8676D9FB1845D46900B89377"
             BuildableName = "glpaint.app"
-            BlueprintName = "glpaint"
-            ReferencedContainer = "container:glpaint.xcodeproj">
+            BlueprintName = "cloud"
+            ReferencedContainer = "container:cloud.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8676D9FB1845D46900B89377"
             BuildableName = "glpaint.app"
-            BlueprintName = "glpaint"
-            ReferencedContainer = "container:glpaint.xcodeproj">
+            BlueprintName = "cloud"
+            ReferencedContainer = "container:cloud.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
